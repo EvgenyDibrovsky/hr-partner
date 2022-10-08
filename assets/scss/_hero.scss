@@ -1,0 +1,100 @@
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/hero-bg.jpg") top center;
+  background-size: cover;
+  position: relative;
+
+  &:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .hero-container {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  h3 {
+    background: rgba($white, .1);
+    color: $white;
+    font-size: 26px;
+    padding: 10px 30px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+  }
+
+  h1 {
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  h2 {
+    color: #eee;
+    margin-bottom: 40px;
+    font-size: 24px;
+  }
+
+  .btn-get-started {
+    font-family: $font-secondary;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 30px 9px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    border: 2px solid #fff;
+    color: #fff;
+    &:hover {
+      background: $primary;
+      border: 2px solid $primary;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    background-attachment: fixed;
+  }
+
+  @media (max-width: 768px) {
+    h3 {
+      font-size: 22px;
+    }
+    h1 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+    h2 {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (max-height: 500px) {
+    height: 150vh;
+  }
+
+}

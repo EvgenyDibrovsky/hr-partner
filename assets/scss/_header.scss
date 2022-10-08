@@ -1,0 +1,31 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 20px 0;
+
+  .logo {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    a {
+      color: #fff;
+    }
+
+    img {
+      max-height: 40px;
+    }
+  }
+
+  &.header-scrolled, &.header-inner-pages {
+    background: rgba(#000, .9);
+    padding: 12px 0;
+  }
+}
